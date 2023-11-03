@@ -38,3 +38,7 @@ spring:
           uri: lb://student-service
           predicates:
             - Path=/student/**
+        - id: installment-service
+          uri: lb://installment-service
+          predicates:
+            - Path=/installment/**
