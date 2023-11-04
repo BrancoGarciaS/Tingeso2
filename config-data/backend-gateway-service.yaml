@@ -42,3 +42,7 @@ spring:
           uri: lb://installment-service
           predicates:
             - Path=/installment/**
+        - id: administration-service
+          uri: lb://administration-service
+          predicates:
+            - Path=/exam/**
